@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 1rem;
+
+    h1 {
+        font-family: "Varela Round", sans-serif;
+        font-weight: 800;
+    }
+}
+
+
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 0.8rem;
+
+}
+
+.cart {
+    display: flex;
+}
+
+.nav-link , .cart-anchor{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    z-index: 0;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.nav-link::before, .cart-anchor::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: white;
+    transition: width 0.3s ease, height 0.3s ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.nav-link:hover::before, .cart-anchor:hover::before {
+    width: 200%;
+    height: 200%;
+}
+
+.nav-link:hover, .cart-anchor:hover {
+    color: red;
+    transform: scale(1.05);
+}
+
+
+
+.nav-link:hover::after, .cart-anchor:hover::after {
+    transform: scaleX(1);
+}
+
+.cart-anchor {
+    list-style: none;
+    text-decoration: none;
+}
+
+.cart {
+    small {
+        color: red;
+    }
+}

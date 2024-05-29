@@ -1,0 +1,30 @@
+.pokemon {
+    height: max-content;
+    background-color: rgb(218, 191, 218);
+    width: max-content;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+
+    h5 {
+        padding: .5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    button {
+        padding: 1rem;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        padding: .3rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: none;
+        margin: .5rem;
+    }
+    button:hover {
+        background-color: antiquewhite;
+    }
+}

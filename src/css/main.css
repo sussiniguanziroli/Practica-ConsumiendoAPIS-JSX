@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  padding: 1rem;
+}
+.header h1 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 800;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 0.8rem;
+}
+
+.cart {
+  display: flex;
+}
+
+.nav-link, .cart-anchor {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  z-index: 0;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.nav-link::before, .cart-anchor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: white;
+  transition: width 0.3s ease, height 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.nav-link:hover::before, .cart-anchor:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.nav-link:hover, .cart-anchor:hover {
+  color: red;
+  transform: scale(1.05);
+}
+
+.nav-link:hover::after, .cart-anchor:hover::after {
+  transform: scaleX(1);
+}
+
+.cart-anchor {
+  list-style: none;
+  text-decoration: none;
+}
+
+.cart small {
+  color: red;
+}
+
+.item-list-container {
+  padding: 1rem;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  display: grid;
+  min-height: 50vh;
+  border-radius: 1rem;
+  gap: 1rem;
+  place-items: center;
+}
+
+.items-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.producto {
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  color: #3498db;
+  padding: 1rem;
+  margin: 1rem;
+}
+.producto h2 {
+  font-weight: 800;
+}
+.producto img {
+  border-radius: 0.5rem;
+}
+
+.item-list-container,
+.items-container,
+.producto {
+  display: none;
+}
+
+.pokemon {
+  height: max-content;
+  background-color: rgb(218, 191, 218);
+  width: max-content;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.pokemon h5 {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.pokemon button {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  margin: 0.5rem;
+}
+.pokemon button:hover {
+  background-color: antiquewhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

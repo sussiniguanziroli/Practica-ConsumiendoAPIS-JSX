@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone XYZ",
+        "description": "Un smartphone con pantalla de 6.5 pulgadas y cámara de 48MP.",
+        "price": 699.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 2,
+        "name": "Laptop ABC",
+        "description": "Una laptop ultradelgada con procesador Intel i7 y 16GB de RAM.",
+        "price": 1199.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 3,
+        "name": "Tablet 123",
+        "description": "Tablet con pantalla de 10 pulgadas y 64GB de almacenamiento.",
+        "price": 399.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 4,
+        "name": "Auriculares Bluetooth",
+        "description": "Auriculares inalámbricos con cancelación de ruido.",
+        "price": 149.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 5,
+        "name": "Smartwatch",
+        "description": "Reloj inteligente con monitor de ritmo cardíaco y GPS.",
+        "price": 199.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 6,
+        "name": "Cámara DSLR",
+        "description": "Cámara digital de 24MP con lente intercambiable.",
+        "price": 799.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 7,
+        "name": "Proyector 4K",
+        "description": "Proyector 4K UHD con 3000 lúmenes.",
+        "price": 499.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 8,
+        "name": "Teclado Mecánico",
+        "description": "Teclado mecánico RGB con interruptores táctiles.",
+        "price": 99.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 9,
+        "name": "Disco Duro Externo",
+        "description": "Disco duro externo de 2TB con conexión USB 3.0.",
+        "price": 89.99,
+        "image": "https://placehold.co/150"
+    },
+    {
+        "id": 10,
+        "name": "Monitor Curvo",
+        "description": "Monitor curvo de 27 pulgadas con resolución QHD.",
+        "price": 349.99,
+        "image": "https://placehold.co/150"
+    }
+]
